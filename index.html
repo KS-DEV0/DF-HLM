@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diffie Hellman JS</title>
+    <script src="script.js"></script>
+    <style>
+        hr {
+            border-top: 1px dashed black
+        }
+        #container {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Berechnung vom Schlüssel K nach Diffie-Hellman</h1>
+    <div id="container">
+        <p>1. Alice und Bob einigen sich auf:</p>
+        <p>g = <input type="text" id="idG" value="2"></p>
+        <p>p = <input type="text" id="idP" value="13"></p>
+        <hr>
+        <p>2. Alice wählt die Geheime Zahl a:</p>
+        <p>a = <input type="text" id="idA" value="4"></p>
+        <p>3. Bob wählt die Geheime Zahl b:</p>
+        <p>b = <input type="text" id="idB" value="8"></p>
+        <p><button onclick="fBerechnen()">Berechne Schlüssel K!</button></p>
+        <div id="idAusgabe"></div>
+    </div>
+</body>
+</html>
